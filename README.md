@@ -32,6 +32,17 @@ make
 To run the examples some dataset are required, available at the following [link](https://zenodo.org/records/18337022).
 Download both the datasets and add them in the ```/build``` folder.
 
+### Boltzmann Machines on MNIST
+
+![Boltzmann on MNIST](./resources/Hopefield2.jpeg)
+![Boltzmann On face](./resources/kernel.png)
+
+This program implements a Deep Belief Network composed of stacked Restricted Boltzmann Machines and trains it in an unsupervised manner on binarized MNIST data. The network learns a hierarchy of latent representations through layer–wise Contrastive Divergence, and the learned filters are visualized across depths to illustrate the progressive emergence of structured features. Additional sampling experiments highlight the generative capability of the lowest RBM by reconstructing and synthesizing patterns from random initial states.
+### Setting Parameters
+The visible and hidden layer sizes define the spatial resolution and abstraction level of each representation stage. The weight initialization scale controls early training stability. Training iterations and mini–batch size determine convergence speed and noise in gradient estimates. The learning rate governs the update magnitude, while the CD–k parameter sets the trade–off between computational cost and accuracy of the divergence approximation. The number of kernels visualized per layer reflects the desired qualitative inspection depth, and the sampling sparsity and temperature regulate diversity and smoothness in generated patterns.
+#### Running the example
+In order to run this example, after following the instructions written in the **Installation** section, in the ```\build ``` folder you have to execute ```/.boltzmann```
+
 ### Hopefield Networks on MNIST
 
 ![Hopfield Logger](./resources/Hopefield1.jpeg)
@@ -74,16 +85,6 @@ The vector ```size``` defines the temporal window of each sample, while ```NUM_S
 #### Running the example
 In order to run this example, after following the instructions written in the **Installation** section, in the ```\build ``` folder you have to execute ```/.mlp```
 
-### Boltzmann Machines on MNIST
-
-![Boltzmann on MNIST](./resources/Hopefield2.jpeg)
-![Boltzmann On face](./resources/kernel.png)
-
-This program implements a Deep Belief Network composed of stacked Restricted Boltzmann Machines and trains it in an unsupervised manner on binarized MNIST data. The network learns a hierarchy of latent representations through layer–wise Contrastive Divergence, and the learned filters are visualized across depths to illustrate the progressive emergence of structured features. Additional sampling experiments highlight the generative capability of the lowest RBM by reconstructing and synthesizing patterns from random initial states.
-### Setting Parameters
-The visible and hidden layer sizes define the spatial resolution and abstraction level of each representation stage. The weight initialization scale controls early training stability. Training iterations and mini–batch size determine convergence speed and noise in gradient estimates. The learning rate governs the update magnitude, while the CD–k parameter sets the trade–off between computational cost and accuracy of the divergence approximation. The number of kernels visualized per layer reflects the desired qualitative inspection depth, and the sampling sparsity and temperature regulate diversity and smoothness in generated patterns.
-#### Running the example
-In order to run this example, after following the instructions written in the **Installation** section, in the ```\build ``` folder you have to execute ```/.boltzmann```
 
 ## Externals
 This project uses the public domain header libraries [stb_image.h](https://github.com/nothings/stb) and 
