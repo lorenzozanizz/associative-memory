@@ -3,7 +3,7 @@
 This project explores a collection of neural models spanning unsupervised representation learning, associative memory, probabilistic generative modeling, and reservoir computing.
 The implemented architectures include Self–Organizing Maps for topology–preserving embedding, Hopfield and Boltzmann networks for energy–based associative memory, deep generative stacks based on Restricted Boltzmann Machines, multilayer perceptrons trained by backpropagation, and reservoir networks for temporal feature extraction.
 
-Together, these models illustrate complementary principles of neural computation—competition, attractor dynamics, stochastic sampling, gradient–based optimization, and dynamical state encoding—providing a unified experimental framework for studying learning, representation, and memory in neural systems.
+Together, these models illustrate complementary principles of neural computation—competition, attractor dynamics, stochastic sampling, gradient-based optimization, and dynamical state encoding providing a unified experimental framework for studying learning, representation, and memory in neural systems.
 
 ---
 
@@ -11,7 +11,7 @@ Together, these models illustrate complementary principles of neural computation
 
 ### Prerequisites
 - **GCC** compiler with **OpenMP** support.
-- **Eigen** and **GNUPlot** C++ libraries.
+- **Eigen** C++ headers and **GNUPlot** installed.
 
 ### Installation
 To install and run, simply clone the repository and create a /build folder inside the project. 
@@ -38,8 +38,10 @@ Download both the datasets and add them in the ```/build``` folder.
 ![Boltzmann On face](./resources/kernel.png)
 
 This program implements a Deep Belief Network composed of stacked Restricted Boltzmann Machines and trains it in an unsupervised manner on binarized MNIST data. The network learns a hierarchy of latent representations through layer–wise Contrastive Divergence, and the learned filters are visualized across depths to illustrate the progressive emergence of structured features. Additional sampling experiments highlight the generative capability of the lowest RBM by reconstructing and synthesizing patterns from random initial states.
+
 ### Setting Parameters
 The visible and hidden layer sizes define the spatial resolution and abstraction level of each representation stage. The weight initialization scale controls early training stability. Training iterations and mini–batch size determine convergence speed and noise in gradient estimates. The learning rate governs the update magnitude, while the CD–k parameter sets the trade–off between computational cost and accuracy of the divergence approximation. The number of kernels visualized per layer reflects the desired qualitative inspection depth, and the sampling sparsity and temperature regulate diversity and smoothness in generated patterns.
+
 #### Running the example
 In order to run this example, after following the instructions written in the **Installation** section, in the ```\build ``` folder you have to execute ```/.boltzmann```
 
