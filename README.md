@@ -19,8 +19,8 @@ Cmake will first ensure that a matching OpenMP implementation before building th
 
 
 ```bash
-git clone https://github.com/lorenzozanizz/hopfield-networks
-cd hopfield-networks
+git clone https://github.com/lorenzozanizz/associative-memory
+cd associative-memory
 mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
@@ -45,7 +45,7 @@ The visible and hidden layer sizes define the spatial resolution and abstraction
 #### Running the example
 In order to run this example, after following the instructions written in the **Installation** section, in the ```\build ``` folder you have to execute ```/.boltzmann```
 
-### Hopefield Networks on MNIST
+### Hopfield Networks on MNIST
 
 ![Hopfield Logger](./resources/Hopefield1.jpeg)
 
