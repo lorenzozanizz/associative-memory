@@ -6,7 +6,6 @@ The implemented architectures include Self–Organizing Maps for topology–pres
 Together, these models illustrate complementary principles of neural computation—competition, attractor dynamics, stochastic sampling, gradient-based optimization, and dynamical state encoding providing a unified experimental framework for studying learning, representation, and memory in neural systems.
 
 ---
-
 ##  Build & Compile Instructions
 
 ### Prerequisites
@@ -16,7 +15,6 @@ Together, these models illustrate complementary principles of neural computation
 ### Installation
 To install and run, simply clone the repository and create a /build folder inside the project. 
 Cmake will first ensure that a matching OpenMP implementation before building the project code.
-
 
 ```bash
 git clone https://github.com/lorenzozanizz/associative-memory
@@ -28,10 +26,6 @@ make
 ```
 
 ---
-## Examples
-To run the examples some dataset are required, available at the following [link](https://zenodo.org/records/18337022).
-Download both the datasets and add them in the ```/build``` folder.
-
 ### Boltzmann Machines on MNIST
 
 ![Boltzmann on MNIST](./resources/Hopefield2.jpeg)
