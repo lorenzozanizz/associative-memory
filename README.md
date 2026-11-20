@@ -5,13 +5,6 @@ The implemented architectures include Self–Organizing Maps for topology–pres
 
 Together, these models illustrate complementary principles of neural computation—competition, attractor dynamics, stochastic sampling, gradient-based optimization, and dynamical state encoding providing a unified experimental framework for studying learning, representation, and memory in neural systems.
 
----
-##  Build & Compile Instructions
-
-### Prerequisites
-- **GCC** compiler with **OpenMP** support.
-- **Eigen** C++ headers and **GNUPlot** installed.
-
 ### Installation
 To install and run, simply clone the repository and create a /build folder inside the project. 
 Cmake will first ensure that a matching OpenMP implementation before building the project code.
