@@ -1,9 +1,7 @@
 # A pure C++ learning resource for foundational Machine Learning
 
 This project explores a collection of neural models spanning unsupervised representation learning, associative memory, probabilistic generative modeling, and reservoir computing.
-The implemented architectures include Self–Organizing Maps for topology–preserving embedding, Hopfield and Boltzmann networks for energy–based associative memory, deep generative stacks based on Restricted Boltzmann Machines, multilayer perceptrons trained by backpropagation, and reservoir networks for temporal feature extraction.
-
-Together, these models illustrate complementary principles of neural computation—competition, attractor dynamics, stochastic sampling, gradient-based optimization, and dynamical state encoding providing a unified experimental framework for studying learning, representation, and memory in neural systems.
+The implemented architectures include Self–Organizing Maps for topology–preserving embedding, Hopfield and Boltzmann networks for energy-based associative memory, deep generative stacks based on Restricted Boltzmann Machines, multilayer perceptrons trained by backpropagation, and reservoir networks for temporal feature extraction.
 
 ### Installation
 To install and run, simply clone the repository and create a /build folder inside the project. 
